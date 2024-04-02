@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding="utf-8"?>
+
+<!DOCTYPE book
+[
+
+<!ENTITY cur_book_name      "antlr_tutorial" >
+<!ENTITY publish_date       "2013-12-15" >
+<!ENTITY release_version    "1.0" >
+
+<!ENTITY copyrith_year "2013" >
+<!ENTITY entity_common_multi_format     SYSTEM  "../../entity_common_multi_format.xml">
+<!ENTITY entity_common_publish_info     SYSTEM  "../../entity_common_publish_info.xml">
+]>
+
+<book version="5.0"
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    
+    xml:lang="zh_CN">
+<info>
+    <title>ANTLR教程</title>
+    <subtitle></subtitle>
+    <keywordset>
+        <keyword>ANTLR</keyword>
+        <keyword>教程</keyword>
+        <keyword>详解</keyword>
+        <keyword>编译器的编译器</keyword>
+    </keywordset>
+
+    <abstract>
+        <para>本文主要介绍了ANTLR方面的内容，包括ANTLR是什么，如何进行ANTLR的开发，总结了ANTLR的语法知识，整理了ANTLR的相关的开发工具，总结了ANTLR常见问题及解决办法，然后总结了ANTLR的一些内容等等</para>
+        &entity_common_multi_format;
+    </abstract>
+
+    <revhistory>
+        <revision>
+            <revnumber>&release_version;</revnumber>
+            <date>&publish_date;</date>
+            <revremark>
+                <orderedlist>
+                    <listitem>把之前教程的地址整理过来</listitem>
+                </orderedlist>
+            </revremark>
+            <authorinitials>crl</authorinitials>
+        </revision>
+    </revhistory>
+
+    &entity_common_publish_info;
+</info>
+
+<xi:include href="preface.xml" />
+<xi:include href="ch01_antlr_intro.xml" />
+<xi:include href="ch02_antlr_dev_process.xml" />
+<xi:include href="ch03_antlr_grammar.xml" />
+<xi:include href="ch04_antlr_dev_tool.xml" />
+<xi:include href="ch05_antlr_common_issue.xml" />
+<xi:include href="ch06_antlr_summary.xml" />
+<xi:include href="reference.xml" />
+
+</book>

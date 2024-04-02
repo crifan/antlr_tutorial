@@ -1,0 +1,475 @@
+<?xml version='1.0' encoding="utf-8"?>
+
+<bibliography
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    
+    xml:id="reference">
+
+<bibliomixed xml:id="ref.what_is_antlr">
+  <bibliosource><link xl:href="http://www.antlr3.org">What is ANTLR?</link></bibliosource>
+  <author>Terence Parr</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.token_never_match">
+  <bibliosource><link xl:href="http://www.crifan.com/summary_antlr_the_following_token_definitions_can_never_be_matched_because_prior_tokens_match_the_same_input/">【整理】关于antlr中出错"The following token definitions can never be matched because prior tokens match the same input"的原因和解决思路</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_related_background">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_related_background_knowledge/">【整理】和ANTLR有关的历史和背景知识</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.summary_antlr_history_version">
+  <bibliosource><link xl:href="http://www.crifan.com/summary_antlr_history_version/">【整理】antlr的历史版本</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.summary_antlr_usage_example">
+  <bibliosource><link xl:href="http://www.crifan.com/summary_antlr_usage_example/">【整理】ANTLR应用案例</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.summary_antlr_tech_advantage">
+  <bibliosource><link xl:href="http://www.crifan.com/summary_technology_advantage_for_antlr/">【整理】antlr在技术上的优势</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.summary_antlr_dev_related">
+  <bibliosource><link xl:href="http://www.crifan.com/summary_antlr_development_related_things/">【整理】与antlr开发相关的一些东西：StringTemplate，antlr的IDE(antlrworks,Eclipse的antlr插件)</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_basic_tutorial">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_basic_tutorial/">ANTLR Basic Tutorial</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.build_antlr_v4_env">
+  <bibliosource><link xl:href="http://www.crifan.com/build_up_antlr_v4_environment/">【记录】搭建ANTLR v4开发环境</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.hello_r_tree_no_output">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_v4_grun_hello_r_tree_no_output/">【已解决】antlr v4中运行grun Hello r -tree，结果无输出</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.cannot_load_hello_as_lexer_or_parser">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_v4_grun_hello_r_tree_cant_load_hello_as_lexer_or_parser/">【已解决】运行grun Hello r -tree出错：Can’t load Hello as lexer or parser</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_into_android_app">
+  <bibliosource><link xl:href="http://www.crifan.com/merge_antlr_into_android_adt/">【记录】把ANTLR v3整合到Android的App中</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.use_treeparser_in_java">
+  <bibliosource><link xl:href="http://www.crifan.com/integrate_parse_tree_using_treeparser_in_antlr_for_java/">【记录】把通过TreeParser去解析树Tree的功能集成到(Android的)Java环境中</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_detailed_syntax">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_detailed_syntax_for_element_sets_labels_tree_construction_operators/">【整理】antlr中的各种语法：集合元素(Element Sets)，标签元素(Element Labels)，构造树操作符(Tree construction operators)</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_v3_syntax">
+  <bibliosource><link xl:href="http://www.crifan.com/summary_antlr_v3_syntax_grammar/">【整理】ANTLR v3的语法</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_header_meaning">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_header_lexer_and_parser_syntax_and_meaning/">【整理】antlr中的.g语法文件中的lexer和parser的header的语法和含义</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_v2_vs_v3">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_v2_vs_antlr_v3_grammar/">【整理】antlr v2和antlr v3的语法的差异</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_syntax_fragment">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_v3_syntax_fragment/">【整理】antlr语法中的fragment</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.cannot_find_symbol">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_antlrworks_1_2_2_jar_error_error_cannot_find_symbol_symbol_method_newline/">【已解决】用antlrworks-1.2.2.jar编译代码出错：error: cannot find symbol，g.NEWLINE();，symbol: method NEWLINE()</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_only_recog_first_line">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_can_not_continue_to_recognize_the_input/">【已解决】antlr调试时，antlr的语法是对的，但是却无法完全识别输入的测试数据，仅识别第一行</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.match_str_use_antlr">
+  <bibliosource><link xl:href="http://www.crifan.com/one_summary_when_match_string_use_antlr_grammar/">【记录】写antrl的语法时的一个心得</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.use_antlrworks_dev">
+  <bibliosource><link xl:href="http://www.crifan.com/summary_use_antlr_antlrworks_develop/">【总结】使用ANTLR和ANTLRWorks的开发心得和注意事项</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlrworks_1_5_rc1_rc2">
+  <bibliosource><link xl:href="http://www.crifan.com/update_antlrworks_to_1_5rc1_actually_is_1_5rc2/">【记录】将当前的ANTLRWorks 1.4.3，升级到ANTLRWorks 1.5.rc1，实际上是ANTLRWorks 1.5.rc2</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlrworks_2_antlr_dev">
+  <bibliosource><link xl:href="http://www.crifan.com/try_with_antlrworks_2_to_do_antlr_dev/">【记录】尝试使用ANTLRWorks 2.0去进行ANTLR开发</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.warning_supported_source_version_release_6">
+  <bibliosource><link xl:href="http://www.crifan.com/antlrworks_2_0_g4_file_warning_supported_source_version_release_6_from_annotation_processor/">【已解决】ANTLRWorks 2.0编译g4文件出现警告：warning: Supported source version ‘RELEASE_6′ from annotation processor</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.line_token_recog_error">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_antlrworks_error_line_token_recognition_error_at/">【已解决】ANTLRWorks 2.0编译Hello.g4文件结果出错：line 1:0 token recognition error at: ‘W’</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.eclipse_antlr_dev">
+  <bibliosource><link xl:href="http://www.crifan.com/use_eclipse_to_do_antlr_development_create_project_and_build/">【记录】使用Eclipse开发Antlr：创建antlr项目并编译</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.play_antlr_eclipse_plugin">
+  <bibliosource><link xl:href="http://www.crifan.com/play_with_antlr_eclipse_plugin/">【记录】折腾Antlr的Eclipse插件</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.execution_was_cancelled">
+  <bibliosource><link xl:href="http://www.crifan.com/eclipse_antlr_execution_was_cancelled_reason_code_generation_fails/">【已解决】Eclipse中对于antlr去Debug(Java)时出错：execution was cancelled reason code generation fails</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.eclipse_antlr_internal_error_occurred_for_input_string">
+  <bibliosource><link xl:href="http://www.crifan.com/eclipse_antlr_an_internal_error_occurred_during_antlr_event_listener_for_input_string_false/">【已解决】Eclipse中用Interpreter去运行Antlr代码出错：An internal error occurred during: "ANTLR Event Listener". For input string: "false"</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.connection_refused_connect">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_eclipse_unable_to_connect_to_antlr_debugger_connection_refused_connect/">【未解决】Eclipse中用Debug(Java)调试Antlr出错：unable to connect to ANTLR Debugger，Connection refused: connect</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.eclipse_debug_antlr_project">
+  <bibliosource><link xl:href="http://www.crifan.com/use_eclipse_to_do_antlr_development_how_to_debug_antlr_project/">【记录】使用Eclipse开发Antlr：如何调试antlr项目</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.continue_try_eclipse_antlr">
+  <bibliosource><link xl:href="http://www.crifan.com/continue_try_use_eclipse_to_debug_antlr_project/">【记录】继续折腾如何使用在Eclipse中调试Antlr项目</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.token_definitions_never_be_matched">
+  <bibliosource><link xl:href="http://www.crifan.com/summary_antlr_the_following_token_definitions_can_never_be_matched_because_prior_tokens_match_the_same_input/">【整理】关于antlr中出错"The following token definitions can never be matched because prior tokens match the same input"的原因和解决思路</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_the_following_token_definitions">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_the_following_token_definitions_can_never_be_matched_because_prior_tokens_match_the_same_input/">【未完全解决】antlr调试出错：The following token definitions can never be matched because prior tokens match the same input</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_using_multiple_alternatives">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_decision_can_match_input_such_as_using_multiple_alternatives/">【已解决】antrl代码编译出错：Decision can match input such as "’#include’" using multiple alternatives: 1, 2</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_ws_using_multiple_alternatives_1_2">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_warning_decision_can_match_input_such_as_ws_using_multiple_alternatives_1_2/">【未解决】antlr语法警告：warning: Decision can match input such as "WS" using multiple alternatives: 1, 2</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_string_using_multiple_alternatives_1_2">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_decision_can_match_input_such_as_string_using_multiple_alternatives_1_2/">【未解决】antlr中STRING出现多重匹配的问题:Decision can match input such as "STRING" using multiple alternatives: 1, 2</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_support_eddl_multiple_language">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_support_eddl_multiple_language_string_with_rule/">【已解决】antlr中支持EDDL的多国语言字符串其中用的是rule而非token</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_mismated_input_expecting_set_null">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_match_operator_mismated_input_amp_expecting_set_null/">【已解决】antlr中匹配OPERATOR出错：mismatched input ‘&amp;’ expecting set null</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_mismatchedsetexception_0_null">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_parse_error_mismatchedsetexception_0_null/">【已解决】antlr解析出错：MismatchedSetException(0!=null)</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_error_mismatchedtokenexception_0_0">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_error_mismatchedtokenexception_0_0/">【已解决】antlr解析双引号出错：MismatchedTokenException(0!=0)</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_can_not_recognize_double_quote">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_can_not_recognize_double_quote/">【未解决】antlr中不识别双引号(double quote)</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_channel_hidden_missingtokenexception">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_v3_grammar_include_channel_hidden_parse_error_missingtokenexception/">【基本解决】antlr v3，用包含{$channel=HIDDEN;}语法，结果解析出错：MissingTokenException</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_missingtokenexception_missing_eof">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_syntax_error_antlr_missingtokenexception_missing_eof/">【已解决】error syntax error: antlr: MissingTokenException(inserted [@-1,0:0='&lt;missing EOF&gt;',&lt;-1&gt;,12:4] at ;)</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_v4_line_mismatched_input_expecting">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_v4_line_mismatched_input_expecting/">【已解决】antlr v4的语法出错：line 1:0 mismatched input ‘a’ expecting A</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_unterminated_rule_detected_at_c_eof_while">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_input_syntax_error_unterminated_rule_missing_detected_at_c_eof_while/">【已解决】antlr v4测试Hello结果出错：syntax error: unterminated rule (missing ‘;’) detected at ‘c ‘ while looking for lexer rule element</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_still_error_no_viable_alternative_at_input">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_still_error_no_viable_alternative_at_input/">【已解决】antlr出错no viable alternative at input ‘__LBL__show’</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_no_viable_alternative_at_input_fragment">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_noviablealtexception_0_null_no_viable_alternative_at_input_fragment/">【已解决】antlr解析字符串STRING出错：no viable alternative at input，对应的错误是NoViableAltException(0@[null])</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_error_mismatched_character_expecting">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_error_mismatched_character_xxx_expecting_yyy/">【已解决】antlr调试语法代码时出错：mismatched character ’5′ expecting ‘I’，no viable alternative at input ’7′</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_input_noviablealtexception_0_null">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_error_no_viable_alternative_at_input_noviablealtexception_0_null/">【已解决】antlr代码执行出错：xxx.ddl line 16:13 no viable alternative at input ’1′，Recognition exception NoViableAltException(0@[null])</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_error_noviablealtexception_0_null">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_error_noviablealtexception_0_null/">【已解决】antlr调试解析出错：NoViableAltException(0@[null])</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_syntax_error_antlr_noviablealtexception_37">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_syntax_error_antlr_noviablealtexception_37/">【已解决】Antlr v3代码编译出错：syntax error: antlr: NoViableAltException(37@[])</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_duplicate_token_type_when_collapsing_subrule_into_set">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_cannot_generate_the_grammar_because_duplicate_token_type_when_collapsing_subrule_into_set/">【已解决】Antlr语法编译出错：Cannot generate the grammar because, duplicate token type COMPOSITE_OPERATOR when collapsing subrule into set</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_rewrite_syntax_or_operator_with_no_output_option">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_rewrite_syntax_or_operator_with_no_output_option_setting_output_ast/">【已解决】antlr语法出错：rewrite syntax or operator with no output option; setting output=AST</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_error_unwantedtokenexception_found">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_error_unwantedtokenexception_found/">【已解决】antlr调试解析出错：UnwantedTokenException(found=xxx)</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_org_antlr_runtime_earlyexitexception">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_v3_grammar_inclue_skip_parse_error_org_antlr_runtime_earlyexitexception/">【基本解决】antlr v3中包含{skip();}的语法，调试解析时出错：org.antlr.runtime.EarlyExitException</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_reference_to_rewrite_element_include_without_reference_on_left_of">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_reference_to_rewrite_element_include_without_reference_on_left_of/">【已解决】antlr代码编译出错：reference to rewrite element include without reference on left of -&gt;</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlrworks_java_io_ioexception_cannot_run_program_javac">
+  <bibliosource><link xl:href="http://www.crifan.com/antlrworks_debug_error_compiler_exception_java_io_ioexception_cannot_run_program_javac_createprocess_error_2/">【已解决】antrlworks调试出错：Compiler exception: java.io.IOException Cannot run program "\javac": CreateProcess error=2 The system cannot find the file specified</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlrworks_time_out_waiting_to_connect_to_the_remote_parser">
+  <bibliosource><link xl:href="http://www.crifan.com/antlrworks_cannot_launch_the_debuggertab_time_out_waiting_to_connect_to_the_remote_parser/">【已解决】ANTLRWorks调试出错：Cannot launch the debuggerTab. Time-out waiting to connect to the remote parser</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlrworks_parser_java_error_identifier_expected">
+  <bibliosource><link xl:href="http://www.crifan.com/antlrworks_debug_error_for_parser_java_error_identifier_expected/">【已解决】antlrworks中调试出错：xxxParser.java:1870: error: &lt;identifier&gt; expected</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlrworks_1_5_compiler_failed_with_result_code_1">
+  <bibliosource><link xl:href="http://www.crifan.com/antlrworks_1_5_compiler_failed_with_result_code_1/">【已解决】ANTLRWorks 1.5编译代码出错：Compiler failed with result code 1</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.summary_antlr_antlrworks_bug_note_experience">
+  <bibliosource><link xl:href="http://www.crifan.com/summary_antlr_antlrworks_bug_note_experience/">【整理】antlrworks使用心得，经验总结，注意事项，bug总结</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlrworks_cannot_run_program_jre6_bin_javac_createprocess_error_2">
+  <bibliosource><link xl:href="http://www.crifan.com/antlrworks_compiler_exception_java_io_ioexception_cannot_run_program_jre6_bin_javac_createprocess_error_2/">【已解决】antlrworks再次出错：Compiler exception: java.io.IOException Cannot run program "C:\Program Files(x86)\Java\jre6\bin\javac": CreateProcess error=2</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.some_time_antlr_antlrworks_crash_log">
+  <bibliosource><link xl:href="http://www.crifan.com/some_time_antlr_antlrworks_crash_log/">【记录】antlr的antlrworks某次挂掉的log</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_about_support_preprocess_or_not">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_about_support_preprocess_or_not/">【记录】关于ANTLR中对于预处理的支持：以为支持普通文件的预处理呢，但是实际上是ANTLR自身识别你写的语法文件的预处理</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.c_preprocess_cpp_g_convert_antlr_v2_to_antlr_v3_version">
+  <bibliosource><link xl:href="http://www.crifan.com/c_preprocess_cpp_g_convert_antlr_v2_to_antlr_v3_version/">【记录】将antlr v2的C/C++的preprocess，即cpp.g，转换为antlr v3</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_preprocess_remove_upsupported_eddl_element">
+  <bibliosource><link xl:href="http://www.crifan.com/use_antlr_preprocess_a_new_eddl_file_remove_upsupported_eddl_element/">【记录】用antlr的preprocess去预处理一个新的eddl文件去除eddl中不支持的元素对应的文件内容</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_multiple_para_define_macro_replacement">
+  <bibliosource><link xl:href="http://www.crifan.com/summary_antlr_v2_cpplexer_g_multiple_para_define_implement_macro_replacement/">【整理】分析cppLexer.g中的多参数的#define实现宏替换的逻辑过程</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_support_preprocess_define_replacement_no_para">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_support_preprocess_define_replacement_no_para/">【记录】让antlr的预处理，支持无参数的宏替换</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_preprocess_recursive_include">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_preprocess_recursive_include/">【记录】尝试用antlr处理C代码中的#include</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_exception_handling_check_whether_tree_node_exception">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_exception_handling_check_whether_a_tree_node_is_exception/">【记录】antlr异常处理：在ParseTree去getTree之后，判断某个树节点是否出现异常</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.record_antlr_exception_handling_learing_summary">
+  <bibliosource><link xl:href="http://www.crifan.com/record_antlr_exception_handling_learing_summary/">【记录】Antlr中的异常处理学习笔记</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_exception_handling_main_type_recognitionexception">
+  <bibliosource><link xl:href="http://www.crifan.com/summary_antlr_exception_handling_type_main_type_is_recognitionexception/">【整理】antlr的Exception Handling异常处理中的异常Exception的类型</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.try_implement_antlr_v3_error_handling_and_error_recovery">
+  <bibliosource><link xl:href="http://www.crifan.com/try_implement_antlr_v3_error_handling_and_error_recovery/">【记录】尝试折腾antlr v3的异常处理和错误恢复：VARIABLE的CLASS的值INPUT故意写错为INPUT1</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_exception_handling_quit_while_first_error">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_exception_handling_quit_while_first_error/">【记录】antlr的异常处理：遇到第一个错误就停止和退出</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_quit_first_exception">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_preprocess_quit_while_first_exception_for_new_hart_eddl_file/">【已解决】在用antlr预处理一个新的hart的eddl文件时希望第一次出错就退出</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_debug_compile_error_recoverfrommismatchedset_intstream">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_debug_compile_error_recoverfrommismatchedset_intstream_recognitionexception_bitset/">【已解决】antlr中尝试出错就退出，结果编译parser出错：error: recoverFromMismatchedSet(IntStream,RecognitionException,BitSet) in xxxParser cannot override recoverFromMismatchedSet(IntStream,RecognitionException,BitSet) in BaseRecognizer，return type void is not compatible with Object</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_preprocess_mismatechedtokenexception_output_more">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_preprocess_eddl_file_mismatechedtokenexception_output_more_detailed_info/">【记录】用antlr预处理异常MismatchedTokenException时能输出更详细的信息</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.try_use_antlr_exception_handling_paraphrase_more_error_msg">
+  <bibliosource><link xl:href="http://www.crifan.com/try_use_antlr_exception_handling_paraphrase_to_give_more_user_friendly_error_message/">【记录】尝试antlr的paraphrase去提供对于用户更好友好的错误信息</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.record_playing_with_antlr_error_handling_report_mode_info_when_error">
+  <bibliosource><link xl:href="http://www.crifan.com/record_playing_with_antlr_error_handling_report_mode_info_when_error/">【记录】折腾antlr的异常处理：使得当初错时，输出更详细的错误信息，包含堆栈信息</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_settext_not_work_for_recursive_token">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_settext_not_work_for_recursive_token/">【未解决】antlr中setText()在递归嵌套的token中无效</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_define_replacement_can_not_remove_macro_text">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_define_replacement_can_not_remove_macro_text/">【未解决】antlr实现#define的宏的多层（递归）替换后，去不掉宏的内容</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_grammar_match_recursive">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_grammar_match_recursive/">【基本解决】用antlr匹配嵌套递归的代码</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.try_to_enhance_antlr_lexer_and_parser_parse_speed_performance">
+  <bibliosource><link xl:href="http://www.crifan.com/try_to_enhance_antlr_lexer_and_parser_parse_speed_performance/">【记录】尝试优化antlr的lexer和parser以提高继续速度（解析性能）</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_v3_conditional_match_in_lexer">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_v3_conditional_match_in_lexer/">【已解决】antlr v3的lexer的条件性匹配</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.add_ansi_c_parse_for_parse_eddl_method_of_antlr">
+  <bibliosource><link xl:href="http://www.crifan.com/add_ansi_c_parse_for_parse_eddl_method_of_antlr/">【记录】antlr中解析EDDL时解析METHOD中的C代码</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.summary_some_other_antlr_material">
+  <bibliosource><link xl:href="http://www.crifan.com/summary_some_other_antlr_material/">【整理】关于antlr的一些资料</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.download_antlr_4_0_rc_1_complete_jar">
+  <bibliosource><link xl:href="http://www.crifan.com/download_antlr_4_0_rc_1_complete_jar/">【资源下载】antlr-4.0-rc-1-complete.jar</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.download_antlr_the_definitive_antlr_reference_v2_v3_v4">
+  <bibliosource><link xl:href="http://www.crifan.com/download_antlr_the_definitive_antlr_reference_v2_v3_v4/">【资料下载】ANTLR的最全的官方文档：The Definitive ANTLR Reference：v2，v3，v4版本都有下载</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.android_debug_antlr_parser_error_for_return">
+  <bibliosource><link xl:href="http://www.crifan.com/android_debug_antlr_parser_error_for_xxx_return/">【问题】android中调试antlr时执行xxx_return去获得parserResult时出错</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.antlr_ast_no_parent_child_relation">
+  <bibliosource><link xl:href="http://www.crifan.com/antlr_ast_no_parent_child_relation/">【已解决】antlr中获得的AST的CommonTree这个树的变量中，不存在所想要的父子(parent,child)关系</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+<bibliomixed xml:id="ref.summary_antlr_related_background_knowledge">
+  <bibliosource><link xl:href="http://www.crifan.com/summary_antlr_related_background_knowledge/">【整理】与antlr相关的背景知识：LL(k) vs LR(k), lexer vs parser, NFA vs DFA, computing lookahead</link></bibliosource>
+  <author>Crifan Li</author>
+</bibliomixed>
+
+</bibliography>

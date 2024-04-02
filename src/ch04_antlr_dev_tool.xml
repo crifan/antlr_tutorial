@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE chapter [
+
+<!ENTITY % crl_ent PUBLIC "crl.ent" "http://www.crifan.com/files/res/docbook/entity/crl.ent">
+%crl_ent;
+
+]>
+<chapter    xml:id="ch04_antlr_dev_tool"
+        xmlns="http://docbook.org/ns/docbook"
+        xmlns:xl="http://www.w3.org/1999/xlink"
+        xmlns:xi="http://www.w3.org/2001/XInclude"
+        xmlns:ns5="http://www.w3.org/1998/Math/MathML"
+        xmlns:ns4="http://www.w3.org/1999/xhtml"
+        xmlns:ns3="http://www.w3.org/2000/svg"
+        xmlns:ns="http://docbook.org/ns/docbook">
+<title>ANTLR的开发工具</title>
+<para>总结ANTLR的相关开发工具或环境：</para>
+<para>目前已知有几种常见方式：</para>
+<itemizedlist>
+    <listitem>命令行式开发ANTLR</listitem>
+    <listitem>用ANTLRWorks去开发ANTLR</listitem>
+    <listitem>基于Eclipse去开发ANTLR</listitem>
+</itemizedlist>
+<para>下面分别介绍：</para>
+<sect1 xml:id="antlr_dev_env_command_line"><title>ANTLR开发环境之命令行</title>
+    <para>基于命令行下去开发ANTLR</para>
+    <para>自己使用对应的命令，去从antlr的.g的文件，生成对应的lexer和parser等相关的代码</para>
+    <para>然后再继续去用对应的代码，写测试代码去测试。</para>
+</sect1>
+
+<sect1 xml:id="antlr_dev_env_antlrworks"><title>ANTLR开发环境之ANTLRWorks</title>
+    <para>ANTLRWorks是IDE，是用Java写的。</para>
+    <para>是官网提供的，官方推荐的ANTLR的开发环境。</para>
+    
+    <sect2 xml:id="antlr_antlrworks_v1"><title>ANTLRWorks v1：可运行的单独的jar包</title>
+        <para>相关总结：</para>
+        <para><link xl:href="http://www.crifan.com/summary_use_antlr_antlrworks_develop/">【总结】使用ANTLR和ANTLRWorks的开发心得和注意事项</link></para>
+        <para><link xl:href="http://www.crifan.com/update_antlrworks_to_1_5rc1_actually_is_1_5rc2/">【记录】将当前的ANTLRWorks 1.4.3，升级到ANTLRWorks 1.5.rc1，实际上是ANTLRWorks 1.5.rc2</link></para>
+        <para><link xl:href="http://www.crifan.com/try_antlrworks_1_5_development/">【记录】尝试使用ANTLRWorks 1.5开发</link></para>
+    </sect2>
+    
+    <sect2 xml:id="antlr_antlrworks_v2"><title>ANTLRWorks v2：基于Netbeans的IDE</title>
+        <para>ANTLRWorks v2，截至目前，感觉是：真心不好用。</para>
+        <para>详见：</para>
+        <para><link xl:href="http://www.crifan.com/try_with_antlrworks_2_to_do_antlr_dev/">【记录】尝试使用ANTLRWorks 2.0去进行ANTLR开发</link></para>
+        <para><link xl:href="http://www.crifan.com/antlrworks_2_0_g4_file_warning_supported_source_version_release_6_from_annotation_processor/">【已解决】ANTLRWorks 2.0编译g4文件出现警告：warning: Supported source version ‘RELEASE_6′ from annotation processor</link></para>
+        <para><link xl:href="http://www.crifan.com/antlr_antlrworks_error_line_token_recognition_error_at/">【已解决】ANTLRWorks 2.0编译Hello.g4文件结果出错：line 1:0 token recognition error at: ‘W’</link></para>
+    </sect2>
+</sect1>
+
+<sect1 xml:id="antlr_dev_env_eclipse_and_plugin"><title>ANTLR开发环境之Eclipse+ANTLR的插件</title>
+    <para>基于成熟的Eclipse这个通用的IDE框架，加上对应的ANTLR插件，也是可以用来开发ANTLR的。</para>
+    <para>只是效果貌似不是那么好而已。</para>
+    <para>详见：</para>
+    <para><link xl:href="http://www.crifan.com/use_eclipse_to_do_antlr_development_create_project_and_build/">【记录】使用Eclipse开发Antlr：创建antlr项目并编译</link></para>
+    <para><link xl:href="http://www.crifan.com/play_with_antlr_eclipse_plugin/">【记录】折腾Antlr的Eclipse插件</link></para>
+    <para><link xl:href="http://www.crifan.com/eclipse_antlr_execution_was_cancelled_reason_code_generation_fails/">【已解决】Eclipse中对于antlr去Debug(Java)时出错：execution was cancelled reason code generation fails</link></para>
+    <para><link xl:href="http://www.crifan.com/eclipse_antlr_an_internal_error_occurred_during_antlr_event_listener_for_input_string_false/">【已解决】Eclipse中用Interpreter去运行Antlr代码出错：An internal error occurred during: "ANTLR Event Listener". For input string: "false"</link></para>
+    <para><link xl:href="http://www.crifan.com/antlr_eclipse_unable_to_connect_to_antlr_debugger_connection_refused_connect/">【未解决】Eclipse中用Debug(Java)调试Antlr出错：unable to connect to ANTLR Debugger，Connection refused: connect</link></para>
+    <para><link xl:href="http://www.crifan.com/use_eclipse_to_do_antlr_development_how_to_debug_antlr_project/">【记录】使用Eclipse开发Antlr：如何调试antlr项目</link></para>
+    <para><link xl:href="http://www.crifan.com/continue_try_use_eclipse_to_debug_antlr_project/">【记录】继续折腾如何使用在Eclipse中调试Antlr项目</link></para>
+</sect1>
+
+</chapter>

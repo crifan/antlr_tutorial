@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE chapter [
+
+<!ENTITY % crl_ent PUBLIC "crl.ent" "http://www.crifan.com/files/res/docbook/entity/crl.ent">
+%crl_ent;
+
+]>
+<chapter    xml:id="ch03_antlr_grammar"
+        xmlns="http://docbook.org/ns/docbook"
+        xmlns:xl="http://www.w3.org/1999/xlink"
+        xmlns:xi="http://www.w3.org/2001/XInclude"
+        xmlns:ns5="http://www.w3.org/1998/Math/MathML"
+        xmlns:ns4="http://www.w3.org/1999/xhtml"
+        xmlns:ns3="http://www.w3.org/2000/svg"
+        xmlns:ns="http://docbook.org/ns/docbook">
+<title>ANTLR的语法Grammar详解</title>
+<para></para>
+<para>ANTLR的语法，虽然有ANTLR作者写的书，其中有解释，但是感觉还是解释的不够详细。</para>
+<para>其中，很多内容，还是需要经过自己的实践，才能更好的理解的。</para>
+<para>下面，总结一下，目前对ANTLR中部分的语法的理解：</para>
+
+<sect1 xml:id="antlr_whole_grammar"><title>完整的ANTLR语法的解释</title>
+    <para>这个是看了作者的书籍后，总结出来的，相对比较全面的语法的解释：</para>
+    <para><link xl:href="http://www.crifan.com/antlr_detailed_syntax_for_element_sets_labels_tree_construction_operators/">【整理】antlr中的各种语法：集合元素(Element Sets)，标签元素(Element Labels)，构造树操作符(Tree construction operators)</link></para>
+    <para><link xl:href="http://www.crifan.com/summary_antlr_v3_syntax_grammar/">【整理】ANTLR v3的语法</link></para>
+</sect1>
+
+<sect1 xml:id="antlr_grammar_specific"><title>详解部分ANTLR语法</title>
+    <sect2 xml:id="antlr_grammar_header"><title>ANTLR中的lexer和parser的header的含义</title>
+        <para>另外关于header方面的含义，总结如下：</para>
+        <para><link xl:href="http://www.crifan.com/antlr_header_lexer_and_parser_syntax_and_meaning/">【整理】antlr中的.g语法文件中的lexer和parser的header的语法和含义</link></para>
+    </sect2>
+
+    <sect2 xml:id="antlr_grammar_v2_vs_v3"><title>antlr v2和antlr v3的语法对比</title>
+        <para>详见：</para>
+        <para><link xl:href="http://www.crifan.com/antlr_v2_vs_antlr_v3_grammar/">【整理】antlr v2和antlr v3的语法的差异</link></para>
+    </sect2>
+
+    <sect2 xml:id="antlr_fragment"><title>ANTLR中的fragment</title>
+        <para>详见：</para>
+        <para><link xl:href="http://www.crifan.com/antlr_v3_syntax_fragment/">【整理】antlr语法中的fragment</link></para>
+        <para><link xl:href="http://www.crifan.com/antlr_antlrworks_1_2_2_jar_error_error_cannot_find_symbol_symbol_method_newline/">【已解决】用antlrworks-1.2.2.jar编译代码出错：error: cannot find symbol，g.NEWLINE();，symbol: method NEWLINE()</link></para>
+        <para>至今，对于fragment，没有真正透彻的了解，所以可能会导致一些问题：</para>
+        <para><link xl:href="http://www.crifan.com/antlr_can_not_continue_to_recognize_the_input/">【已解决】antlr调试时，antlr的语法是对的，但是却无法完全识别输入的测试数据，仅识别第一行</link></para>
+    </sect2>
+</sect1>
+
+<para></para>
+<para>其他的，还有一些心得：</para>
+<para><link xl:href="http://www.crifan.com/one_summary_when_match_string_use_antlr_grammar/">【记录】写antrl的语法时的一个心得</link></para>
+<para></para>
+
+</chapter>

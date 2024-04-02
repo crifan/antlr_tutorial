@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE chapter [
+
+<!ENTITY % crl_ent PUBLIC "crl.ent" "http://www.crifan.com/files/res/docbook/entity/crl.ent">
+%crl_ent;
+
+]>
+<chapter    xml:id="ch02_antlr_dev_process"
+        xmlns="http://docbook.org/ns/docbook"
+        xmlns:xl="http://www.w3.org/1999/xlink"
+        xmlns:xi="http://www.w3.org/2001/XInclude"
+        xmlns:ns5="http://www.w3.org/1998/Math/MathML"
+        xmlns:ns4="http://www.w3.org/1999/xhtml"
+        xmlns:ns3="http://www.w3.org/2000/svg"
+        xmlns:ns="http://docbook.org/ns/docbook">
+<title>ANTLR的开发流程</title>
+<para></para>
+<sect1 xml:id="antlr_dev_process"><title>ANTLR的开发流程</title>
+    <para>关于ANTLR的基本的开发流程和示例，详见：</para>
+    <para><link xl:href="http://www.crifan.com/antlr_basic_tutorial/">ANTLR Basic Tutorial</link></para>
+    <para></para>
+</sect1>
+
+<sect1 xml:id="antlr_v4_dev_process"><title>ANTLR v4的开发流程</title>
+    <para>关于ANTLR v4的环境搭建，可参考：</para>
+    <para><link xl:href="http://www.crifan.com/build_up_antlr_v4_environment/">【记录】搭建ANTLR v4开发环境</link></para>
+    <para></para>
+    <para>期间，可能会出现一些问题，详见：</para>
+    <para><link xl:href="http://www.crifan.com/antlr_v4_grun_hello_r_tree_no_output/">【已解决】antlr v4中运行grun Hello r -tree，结果无输出</link></para>
+    <para><link xl:href="http://www.crifan.com/antlr_v4_grun_hello_r_tree_cant_load_hello_as_lexer_or_parser/">【已解决】运行grun Hello r -tree出错：Can’t load Hello as lexer or parser</link></para>
+</sect1>
+
+<sect1 xml:id="integrate_antlr_to_app"><title>把ANTLR整合到自己的程序中</title>
+    <para>对于搞清楚了基本的ANTLR开发流程后，</para>
+    <para>写好了ANTLR的.g的语法文件，生成了对应的lexer和parser的代码</para>
+    <para>比如xxxLexer.java和xxxParser.java</para>
+    <para>接下来，就是要搞清楚，如何去将对应的代码，集成到自己的程序中，为程序所用了：</para>
+    <para>这方面，可以参考：</para>
+    <para><link xl:href="http://www.crifan.com/merge_antlr_into_android_adt/">【记录】把ANTLR v3整合到Android的App中</link></para>
+    <para><link xl:href="http://www.crifan.com/integrate_parse_tree_using_treeparser_in_antlr_for_java/">【记录】把通过TreeParser去解析树Tree的功能集成到(Android的)Java环境中</link></para>
+</sect1>
+
+</chapter>

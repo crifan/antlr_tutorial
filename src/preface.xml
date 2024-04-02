@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE preface>
+
+<preface xml:id="preface" xmlns="http://docbook.org/ns/docbook"
+         xmlns:xl="http://www.w3.org/1999/xlink"
+         xmlns:xi="http://www.w3.org/2001/XInclude"
+         xmlns:ns5="http://www.w3.org/1998/Math/MathML"
+         xmlns:ns4="http://www.w3.org/1999/xhtml"
+         xmlns:ns3="http://www.w3.org/2000/svg"
+         xmlns:ns="http://docbook.org/ns/docbook">
+<title>前言</title>
+
+<sect1 xml:id="purpose"><title>本文目的</title>
+    <para>本文目的在于，介绍ANTLR是什么，以及如何用ANTLR开发自己的解析器，以及总结常见的ANTLR错误的原因和解决办法。</para>
+</sect1>
+
+<sect1 xml:id="before_learn_antlr"><title>学习ANTLR之前</title>
+    <para>需要了解一些相关背景概念和知识：</para>
+    <para><link xl:href="http://www.crifan.com/summary_antlr_related_background_knowledge/">【整理】与antlr相关的背景知识：LL(k) vs LR(k), lexer vs parser, NFA vs DFA, computing lookahead</link></para>
+    <para>然后后续再去学习ANTLR，才会更加清楚相关的原理和概念。</para>
+</sect1>
+
+</preface>
+

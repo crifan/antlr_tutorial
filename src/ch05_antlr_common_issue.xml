@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE chapter [
+
+<!ENTITY % crl_ent PUBLIC "crl.ent" "http://www.crifan.com/files/res/docbook/entity/crl.ent">
+%crl_ent;
+
+]>
+
+<chapter    xml:id="ch05_antlr_common_issue"
+        xmlns="http://docbook.org/ns/docbook"
+        xmlns:xl="http://www.w3.org/1999/xlink"
+        xmlns:xi="http://www.w3.org/2001/XInclude"
+        xmlns:ns5="http://www.w3.org/1998/Math/MathML"
+        xmlns:ns4="http://www.w3.org/1999/xhtml"
+        xmlns:ns3="http://www.w3.org/2000/svg"
+        xmlns:ns="http://docbook.org/ns/docbook">
+<title>ANLTR常见问题及解答</title>
+<para></para>
+<para>ANTLR开发期间，常常会遇到各种错误，现在总结如下：</para>
+<para></para>
+
+<sect1 xml:id="antlr_grammar_errors"><title>ANTLR的语法方面常见问题及解决办法</title>
+    <sect2 xml:id="antlr_never_be_matched"><title>The following token definitions can never be matched because prior tokens match the same input</title>
+        <para>在写ANTLR的grammar时，经常会遇到：</para>
+        <screen>The following token definitions can never be matched because prior tokens match the same input</screen>
+        <para>对于这样的问题，之前遇到过很多。</para>
+        <para>后来，算是有点明白了，所以专门整理出来其原因和一般的解决思路：</para>
+        <para><link xl:href="http://www.crifan.com/summary_antlr_the_following_token_definitions_can_never_be_matched_because_prior_tokens_match_the_same_input/">【整理】关于antlr中出错"The following token definitions can never be matched because prior tokens match the same input"的原因和解决思路</link></para>
+        <para>另外，之前遇到过很多次，有需要的可以去参考：</para>
+        <itemizedlist>
+            <listitem><link xl:href="http://www.crifan.com/antlr_the_following_token_definitions_can_never_be_matched_because_prior_tokens_match_the_same_input/">【未完全解决】antlr调试出错：The following token definitions can never be matched because prior tokens match the same input</link></listitem>
+        </itemizedlist>
+    </sect2>
+
+    <sect2 xml:id="antlr_multiple_alternatives"><title>Decision can match input such as xxx using multiple alternatives</title>
+        <para>在写ANTLR的grammar时，经常会遇到，多重匹配的问题：</para>
+        <para>一般的小问题，都可以自己慢慢修改代码，而搞定的。</para>
+        <para>比如：</para>
+        <para><link xl:href="http://www.crifan.com/antlr_decision_can_match_input_such_as_using_multiple_alternatives/">【已解决】antrl代码编译出错：Decision can match input such as "’#include’" using multiple alternatives: 1, 2</link></para>
+        <para>其他的，也有之前不够熟悉antlr时，没有解决的问题：</para>
+        <para><link xl:href="http://www.crifan.com/antlr_warning_decision_can_match_input_such_as_ws_using_multiple_alternatives_1_2/">【未解决】antlr语法警告：warning: Decision can match input such as "WS" using multiple alternatives: 1, 2</link></para>
+        <para>但是实际上，经过后来的折腾，早就解决了的。</para>
+        <para></para>
+        <para>但是，有时候，也会遇到比较难处理而始终搞不定的，比如：</para>
+        <para><link xl:href="http://www.crifan.com/antlr_decision_can_match_input_such_as_string_using_multiple_alternatives_1_2/">【未解决】antlr中STRING出现多重匹配的问题:Decision can match input such as "STRING" using multiple alternatives: 1, 2</link></para>
+    </sect2>
+
+    <sect2 xml:id="antlr_mismatchedsetexception"><title>MismatchedSetException和mismatched input xxx expecting set yyy</title>
+        <para>写antlr语法期间，调试期间，遇到最多的，可能就属不匹配的问题了。</para>
+        <para>对于不匹配的问题，其原因有各种各样，而导致不匹配的。</para>
+        <para>目前已经遇到的，大致有这几类：</para>
+        <itemizedlist>
+            <listitem>后面所要匹配的内容，被前面已经匹配掉了，所以后面会报错，无法匹配
+                <para>比如：</para>
+                <para><link xl:href="http://www.crifan.com/antlr_support_eddl_multiple_language_string_with_rule/">【已解决】antlr中支持EDDL的多国语言字符串其中用的是rule而非token</link></para>
+                <para><link xl:href="http://www.crifan.com/antlr_match_operator_mismated_input_amp_expecting_set_null/">【已解决】antlr中匹配OPERATOR出错：mismatched input ‘&amp;’ expecting set null</link></para>
+                <para><link xl:href="http://www.crifan.com/antlr_parse_error_mismatchedsetexception_0_null/">【已解决】antlr解析出错：MismatchedSetException(0!=null)</link></para>
+                <para><link xl:href="http://www.crifan.com/antlr_error_mismatchedtokenexception_0_0/">【已解决】antlr解析双引号出错：MismatchedTokenException(0!=0)</link></para>
+                <para><link xl:href="http://www.crifan.com/antlr_can_not_recognize_double_quote/">【未解决】antlr中不识别双引号(double quote)</link></para>
+                <para><link xl:href="http://www.crifan.com/antlr_v3_grammar_include_channel_hidden_parse_error_missingtokenexception/">【基本解决】antlr v3，用包含{$channel=HIDDEN;}语法，结果解析出错：MissingTokenException</link></para>
+                <para><link xl:href="http://www.crifan.com/antlr_syntax_error_antlr_missingtokenexception_missing_eof/">【已解决】error syntax error: antlr: MissingTokenException(inserted [@-1,0:0='&lt;missing EOF&gt;',&lt;-1&gt;,12:4] at ;)</link></para>
+            </listitem>
+            <listitem>自己语法写错了，的确不匹配
+                <para>如果是自己语法不小心写错了，自己仔细调试后，还是可以发现。</para>
+                <para>然后改为正确的所要匹配的内容，即可。</para>
+            </listitem>
+        </itemizedlist>
+        <para></para>
+        <para>ANTLR v4中，由于一些语法的变化，导致语法检查更严格，有时候也会导致此类mismatch的问题：</para>
+        <para><link xl:href="http://www.crifan.com/antlr_v4_line_mismatched_input_expecting/">【已解决】antlr v4的语法出错：line 1:0 mismatched input ‘a’ expecting A</link></para>
+    </sect2>
+
+    <sect2 xml:id="antlr_unterminated_rule_detected_at"><title>syntax error: unterminated rule detected at xxx while looking for lexer rule element</title>
+        <para>详见：</para>
+        <para><link xl:href="http://www.crifan.com/antlr_input_syntax_error_unterminated_rule_missing_detected_at_c_eof_while/">【已解决】antlr v4测试Hello结果出错：syntax error: unterminated rule (missing ‘;’) detected at ‘c ‘ while looking for lexer rule element</link></para>
+        <para></para>
+    </sect2>
+
+
+    <sect2 xml:id="antlr_noviablealtexception"><title>NoViableAltException和no viable alternative at input xxx</title>
+        <para>详见：</para>
+        <para><link xl:href="http://www.crifan.com/antlr_still_error_no_viable_alternative_at_input/">【已解决】antlr出错no viable alternative at input ‘__LBL__show’</link></para>
+        <para></para>
+        <para><link xl:href="http://www.crifan.com/antlr_noviablealtexception_0_null_no_viable_alternative_at_input_fragment/">【已解决】antlr解析字符串STRING出错：no viable alternative at input，对应的错误是NoViableAltException(0@[null])</link></para>
+        <para><link xl:href="http://www.crifan.com/antlr_error_mismatched_character_xxx_expecting_yyy/">【已解决】antlr调试语法代码时出错：mismatched character ’5′ expecting ‘I’，no viable alternative at input ’7′</link></para>
+        <para><link xl:href="http://www.crifan.com/antlr_error_no_viable_alternative_at_input_noviablealtexception_0_null/">【已解决】antlr代码执行出错：xxx.ddl line 16:13 no viable alternative at input ’1′，Recognition exception NoViableAltException(0@[null])</link></para>
+        <para><link xl:href="http://www.crifan.com/antlr_error_noviablealtexception_0_null/">【已解决】antlr调试解析出错：NoViableAltException(0@[null])</link></para>
+        <para><link xl:href="http://www.crifan.com/antlr_syntax_error_antlr_noviablealtexception_37/">【已解决】Antlr v3代码编译出错：syntax error: antlr: NoViableAltException(37@[])</link></para>
+    </sect2>
+
+    <sect2 xml:id="antlr_duplicate_token_type"><title>Cannot generate the grammar because, duplicate token type xxx when collapsing subrule into set</title>
+        <para>如果ANTLR语法写的有问题的话，则是无法生成对应的代码的。</para>
+        <para>错误有多种可能：</para>
+        <para>比如是由于符号类型冲突而无法生成代码，详见：</para>
+        <para><link xl:href="http://www.crifan.com/antlr_cannot_generate_the_grammar_because_duplicate_token_type_when_collapsing_subrule_into_set/">【已解决】Antlr语法编译出错：Cannot generate the grammar because, duplicate token type COMPOSITE_OPERATOR when collapsing subrule into set</link></para>
+    </sect2>
+
+    <sect2 xml:id="antlr_no_output_option"><title>rewrite syntax or operator with no output option xxx</title>
+        <para>有时候，是在ANTLR的option中，添加了一些不支持的参数或选项，则导致此错误。</para>
+        <para>比如：</para>
+        <para><link xl:href="http://www.crifan.com/antlr_rewrite_syntax_or_operator_with_no_output_option_setting_output_ast/">【已解决】antlr语法出错：rewrite syntax or operator with no output option; setting output=AST</link></para>
+    </sect2>
+
+    <sect2 xml:id="antlr_unwantedtokenexception"><title>UnwantedTokenException(found=xxx)</title>
+        <para>比如：</para>
+        <para><link xl:href="http://www.crifan.com/antlr_error_unwantedtokenexception_found/">【已解决】antlr调试解析出错：UnwantedTokenException(found=xxx)</link></para>
+    </sect2>
+    
+    <sect2 xml:id="antlr_earlyexitexception"><title>org.antlr.runtime.EarlyExitException</title>
+        <para>比如：</para>
+        <para><link xl:href="http://www.crifan.com/antlr_v3_grammar_inclue_skip_parse_error_org_antlr_runtime_earlyexitexception/">【基本解决】antlr v3中包含{skip();}的语法，调试解析时出错：org.antlr.runtime.EarlyExitException</link></para>
+    </sect2>
+        
+    <sect2 xml:id="antlr_without_reference_on_left"><title>reference to rewrite element include without reference on left of -&gt;</title>
+        <para>比如：</para>
+        <para><link xl:href="http://www.crifan.com/antlr_reference_to_rewrite_element_include_without_reference_on_left_of/">【已解决】antlr代码编译出错：reference to rewrite element include without reference on left of -&gt;</link></para>
+    </sect2>
+</sect1>
+
+<sect1 xml:id="antlr_antlrworks_errors"><title>ANTLRWorks方面常见问题及解决办法</title>
+    <para>ANTLRWorks使用期间，也常会遇到很多问题，比如：</para>
+    
+    <sect2 xml:id="antlrworks_cannot_run_program_javac"><title>Compiler exception: java.io.IOException Cannot run program javac</title>
+        <para><link xl:href="http://www.crifan.com/antlrworks_debug_error_compiler_exception_java_io_ioexception_cannot_run_program_javac_createprocess_error_2/">【已解决】antrlworks调试出错：Compiler exception: java.io.IOException Cannot run program "\javac": CreateProcess error=2 The system cannot find the file specified</link></para>
+    </sect2>
+    
+    <sect2 xml:id="antlrworks_cannot_launch_debuggerTab_timeout"><title>Cannot launch the debuggerTab. Time-out waiting to connect to the remote parser</title>
+        <para><link xl:href="http://www.crifan.com/antlrworks_cannot_launch_the_debuggertab_time_out_waiting_to_connect_to_the_remote_parser/">【已解决】ANTLRWorks调试出错：Cannot launch the debuggerTab. Time-out waiting to connect to the remote parser</link></para>
+    </sect2>
+    
+    <sect2 xml:id="antlrworks_parser_error_expected"><title>xxxParser.java error: &lt;xxx&gt; expected</title>
+        <para><link xl:href="http://www.crifan.com/antlrworks_debug_error_for_parser_java_error_identifier_expected/">【已解决】antlrworks中调试出错：xxxParser.java:1870: error: &lt;identifier&gt; expected</link></para>
+    </sect2>
+ 
+    <sect2 xml:id="antlrworks_compiler_failed"><title>Compiler failed with result code 1</title>
+        <para>由于antlrworks本身版本的问题，而导致编译出错的：</para>
+        <para><link xl:href="http://www.crifan.com/antlrworks_1_5_compiler_failed_with_result_code_1/">【已解决】ANTLRWorks 1.5编译代码出错：Compiler failed with result code 1</link></para>
+    </sect2>
+</sect1>
+
+
+</chapter>

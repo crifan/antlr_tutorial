@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE chapter [
+
+<!ENTITY % crl_ent PUBLIC "crl.ent" "http://www.crifan.com/files/res/docbook/entity/crl.ent">
+%crl_ent;
+
+]>
+
+<chapter    xml:id="ch01_antlr_intro"
+        xmlns="http://docbook.org/ns/docbook"
+        xmlns:xl="http://www.w3.org/1999/xlink"
+        xmlns:xi="http://www.w3.org/2001/XInclude"
+        xmlns:ns5="http://www.w3.org/1998/Math/MathML"
+        xmlns:ns4="http://www.w3.org/1999/xhtml"
+        xmlns:ns3="http://www.w3.org/2000/svg"
+        xmlns:ns="http://docbook.org/ns/docbook">
+<title>ANTLR简介</title>
+<para></para>
+
+<sect1 xml:id="what_is_antlr"><title>ANTLR是什么</title>
+    <para>ANTLR==<emphasis>AN</emphasis>other <emphasis>T</emphasis>ool for <emphasis>L</emphasis>anguage <emphasis>R</emphasis>ecognition</para>
+    <itemizedlist>
+        <listitem>ANTLR是和语言有关的工具</listitem>
+        <listitem>ATNLR是一个框架</listitem>
+        <listitem>你可以用ANLTR去构建一个识别器，解析器，编译器，转换器</listitem>
+    </itemizedlist>
+    <para></para>
+</sect1>
+
+<sect1 xml:id="antlr_version_history"><title>ANTLR版本历史</title>
+    <para>总结一下ANTLR的发展历史，历史版本：</para>
+    <para><link xl:href="http://www.crifan.com/antlr_related_background_knowledge/">【整理】和ANTLR有关的历史和背景知识</link></para>
+    <para><link xl:href="http://www.crifan.com/summary_antlr_history_version/">【整理】antlr的历史版本</link></para>
+</sect1>
+
+<sect1 xml:id="antlr_usage_application"><title>ANTLR的应用领域</title>
+    <para>ANTLR可以用在很多领域中，主要是涉及到解析器，解析特定的语法的，都可以去实现。</para>
+    <para>详见：</para>
+    <para><link xl:href="http://www.crifan.com/summary_antlr_usage_example/">【整理】ANTLR应用案例</link></para>
+</sect1>
+
+<sect1 xml:id="antlr_tech_advantage"><title>ANTLR技术的优势</title>
+    <para><link xl:href="http://www.crifan.com/summary_technology_advantage_for_antlr/">【整理】antlr在技术上的优势</link></para>
+</sect1>
+
+<sect1 xml:id="antlr_related_concept"><title>和ANTLR相关的一些概念</title>
+    <para>折腾ANTLR之前，需要对于和ANTLR相关的一些概念，有所了解：</para>
+    <para><link xl:href="http://www.crifan.com/summary_antlr_development_related_things/">【整理】与antlr开发相关的一些东西：StringTemplate，antlr的IDE(antlrworks,Eclipse的antlr插件)</link></para>
+</sect1>
+
+</chapter>

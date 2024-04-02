@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE chapter [
+
+<!ENTITY % crl_ent PUBLIC "crl.ent" "http://www.crifan.com/files/res/docbook/entity/crl.ent">
+%crl_ent;
+
+]>
+
+<chapter    xml:id="ch06_antlr_summary"
+        xmlns="http://docbook.org/ns/docbook"
+        xmlns:xl="http://www.w3.org/1999/xlink"
+        xmlns:xi="http://www.w3.org/2001/XInclude"
+        xmlns:ns5="http://www.w3.org/1998/Math/MathML"
+        xmlns:ns4="http://www.w3.org/1999/xhtml"
+        xmlns:ns3="http://www.w3.org/2000/svg"
+        xmlns:ns="http://docbook.org/ns/docbook">
+<title>ANTLR开发经验总结</title>
+
+<para>对于ANLTR开发方面的经验总结如下：</para>
+<para></para>
+<para></para>
+<para></para>
+<sect1 xml:id="antlrworks_usage"><title>ANTLRWorks使用心得</title>
+    <para>在使用ANTLR的最主要的开发工具：ANTLRWorks期间，遇到很多问题，也总结出很多相关技巧。</para>
+    <para>现整理如下，供参考：</para>
+    <para><link xl:href="http://www.crifan.com/summary_antlr_antlrworks_bug_note_experience/">【整理】antlrworks使用心得，经验总结，注意事项，bug总结</link></para>
+    <para><link xl:href="http://www.crifan.com/antlrworks_compiler_exception_java_io_ioexception_cannot_run_program_jre6_bin_javac_createprocess_error_2/">【已解决】antlrworks再次出错：Compiler exception: java.io.IOException Cannot run program "C:\Program Files(x86)\Java\jre6\bin\javac": CreateProcess error=2</link></para>
+    <sect2 xml:id="antlrworks_crash"><title>ANTLRWorks有时候会挂掉</title>
+        <para>比如之前遇到的：</para>
+        <para><link xl:href="http://www.crifan.com/some_time_antlr_antlrworks_crash_log/">【记录】antlr的antlrworks某次挂掉的log</link></para>
+    </sect2>
+</sect1>
+
+<sect1 xml:id="antlrworks_preprocess"><title>ANTLR的预处理Preprocess</title>
+    <sect2 xml:id="antlr_self_not_support_preprocess"><title>ANTLR自身是不支持预处理功能的</title>
+        <para>ANTLR本身，对于预处理方面是否支持，答案是不支持的。</para>
+        <para>详见：</para>
+        <para><link xl:href="http://www.crifan.com/antlr_about_support_preprocess_or_not/">【记录】关于ANTLR中对于预处理的支持：以为支持普通文件的预处理呢，但是实际上是ANTLR自身识别你写的语法文件的预处理</link></para>
+        <para></para>
+    </sect2>
+    <sect2 xml:id="use_antlr_do_preprocess"><title>可以使用ANTLR去实现预处理的功能</title>
+        <para>而对于，真正的用ANTLR去实现预处理这个功能，可以参考之前我的一些折腾：</para>
+        <para></para>
+        <para><link xl:href="http://www.crifan.com/c_preprocess_cpp_g_convert_antlr_v2_to_antlr_v3_version/">【记录】将antlr v2的C/C++的preprocess，即cpp.g，转换为antlr v3</link></para>
+        <para><link xl:href="http://www.crifan.com/use_antlr_preprocess_a_new_eddl_file_remove_upsupported_eddl_element/">【记录】用antlr的preprocess去预处理一个新的eddl文件去除eddl中不支持的元素对应的文件内容</link></para>
+        <para><link xl:href="http://www.crifan.com/summary_antlr_v2_cpplexer_g_multiple_para_define_implement_macro_replacement/">【整理】分析cppLexer.g中的多参数的#define实现宏替换的逻辑过程</link></para>
+        <para><link xl:href="http://www.crifan.com/antlr_support_preprocess_define_replacement_no_para/">【记录】让antlr的预处理，支持无参数的宏替换</link></para>
+        <para><link xl:href="http://www.crifan.com/antlr_preprocess_recursive_include/">【记录】尝试用antlr处理C代码中的#include</link></para>
+    </sect2>
+</sect1>
+
+<sect1 xml:id="antlr_exception"><title>ANTLR的异常处理</title>
+    <para>ANTLR中，对于异常处理，支持的很好，功能很丰富了。</para>
+    <para>对此，我们可以利用ANTLR的异常方面的信息，去实现一些自己所需要的功能，比如：</para>
+    <para><link xl:href="http://www.crifan.com/antlr_exception_handling_check_whether_a_tree_node_is_exception/">【记录】antlr异常处理：在ParseTree去getTree之后，判断某个树节点是否出现异常</link></para>
+    
+    <para></para>
+    <para>其中，关于异常处理的方面的经验和心得，可以先去参考：</para>
+    <para><link xl:href="http://www.crifan.com/record_antlr_exception_handling_learing_summary/">【记录】Antlr中的异常处理学习笔记</link></para>
+    <para><link xl:href="http://www.crifan.com/summary_antlr_exception_handling_type_main_type_is_recognitionexception/">【整理】antlr的Exception Handling异常处理中的异常Exception的类型</link></para>
+    <para>其他的一些，关于异常处理方面的折腾，供参考：</para>
+    <para><link xl:href="http://www.crifan.com/try_implement_antlr_v3_error_handling_and_error_recovery/">【记录】尝试折腾antlr v3的异常处理和错误恢复：VARIABLE的CLASS的值INPUT故意写错为INPUT1</link></para>
+    <para></para>
+    <para></para>
+    <para></para>
+    <para>对于ANTLR的异常处理方面，有更多可以扩展和利用的空间：</para>
+    <sect2 xml:id="antlr_exit_when_error"><title>ANTLR出错异常时就退出（不继续恢复错误和继续运行）</title>
+        <para>ANTLR遇到错误，出现异常时，其默认的机制中，就已经支持：自动尝试恢复错误，然后回退到前一步，继续选择别的分支路径，继续执行下去</para>
+        <para>而希望实现：当ANTLR解析出错时，就退出，则也是支持的。</para>
+        <para>详见：</para>
+        <para><link xl:href="http://www.crifan.com/antlr_exception_handling_quit_while_first_error/">【记录】antlr的异常处理：遇到第一个错误就停止和退出</link></para>
+        <para><link xl:href="http://www.crifan.com/antlr_preprocess_quit_while_first_exception_for_new_hart_eddl_file/">【已解决】在用antlr预处理一个新的hart的eddl文件时希望第一次出错就退出</link></para>
+        <note xml:id="nt.antlr_api_change"><title>ANTLR的API变化导致部分函数失效</title>
+            <para>之前遇到的，由于ANTLR的API的变化，导致函数接口变化</para>
+            <para>导致参考别人的ANTLR的示例代码时，会出错。需要去找到最新的API，才能继续使用的。</para>
+            <para>详见：</para>
+            <para><link xl:href="http://www.crifan.com/antlr_debug_compile_error_recoverfrommismatchedset_intstream_recognitionexception_bitset/">【已解决】antlr中尝试出错就退出，结果编译parser出错：error: recoverFromMismatchedSet(IntStream,RecognitionException,BitSet) in xxxParser cannot override recoverFromMismatchedSet(IntStream,RecognitionException,BitSet) in BaseRecognizer，return type void is not compatible with Object</link></para>
+        </note>
+    </sect2>
+
+    <sect2 xml:id="antlr_show_more_when_error"><title>ANTLR出错异常时显示更多详细信息</title>
+        <para>ANTLR解析期间，遇到错误，会自动抛出异常，会打印出一些错误信息。</para>
+        <para>其默认的异常出错信息，已经相对比较全面了。</para>
+        <para>但是如果想要输出更多的，其他方面的，详细出错信息，则可以参考：</para>
+        <para><link xl:href="http://www.crifan.com/antlr_preprocess_eddl_file_mismatechedtokenexception_output_more_detailed_info/">【记录】用antlr预处理异常MismatchedTokenException时能输出更详细的信息</link></para>
+        <para><link xl:href="http://www.crifan.com/try_use_antlr_exception_handling_paraphrase_to_give_more_user_friendly_error_message/">【记录】尝试antlr的paraphrase去提供对于用户更好友好的错误信息</link></para>
+        <para><link xl:href="http://www.crifan.com/record_playing_with_antlr_error_handling_report_mode_info_when_error/">【记录】折腾antlr的异常处理：使得当初错时，输出更详细的错误信息，包含堆栈信息</link></para>
+    </sect2>
+</sect1>
+
+<sect1 xml:id="antlr_recursive"><title>ANTLR的递归</title>
+    <para>ANTLR中，ANTLR v4之前，是不支持左递归的。</para>
+    <para></para>
+    <para>当然，在有些时候，也是可以使用递归的。</para>
+    <para>比如：</para>
+    <para></para>
+    <para>而对于ANTLR中的递归的话，尤其是在Lexer中，有时候会很难实现自己所要的效果。</para>
+    <para>详见：</para>
+    <para><link xl:href="http://www.crifan.com/antlr_settext_not_work_for_recursive_token/">【未解决】antlr中setText()在递归嵌套的token中无效</link></para>
+    <para><link xl:href="http://www.crifan.com/antlr_define_replacement_can_not_remove_macro_text/">【未解决】antlr实现#define的宏的多层（递归）替换后，去不掉宏的内容</link></para>
+    <para><link xl:href="http://www.crifan.com/antlr_grammar_match_recursive/">【基本解决】用antlr匹配嵌套递归的代码</link></para>
+</sect1>
+
+<sect1 xml:id="antlr_parse_performance"><title>ANTLR解析性能</title>
+    <para>关于ANTLR的解析性能，相对很不错了。</para>
+    <para>只是，有时候，自己的实现不够好的话，还是需要想办法，再去优化性能的：</para>
+    <para><link xl:href="http://www.crifan.com/try_to_enhance_antlr_lexer_and_parser_parse_speed_performance/">【记录】尝试优化antlr的lexer和parser以提高继续速度（解析性能）</link></para>
+</sect1>
+
+
+<sect1 xml:id="antlr_conditional_match"><title>ANTLR中的条件性匹配</title>
+    <para>详见：</para>
+    <para><link xl:href="http://www.crifan.com/antlr_v3_conditional_match_in_lexer/">【已解决】antlr v3的lexer的条件性匹配</link></para>
+</sect1>
+
+<sect1 xml:id="antlr_resourced_download"><title>ANTLR相关资源下载</title>
+    <sect2 xml:id="antlr_sample_code_download"><title>ANTLR语法示例参考代码</title>
+        <para>一些可供参考的antlr的语法源码：</para>
+        <para><link xl:href="http://www.crifan.com/add_ansi_c_parse_for_parse_eddl_method_of_antlr/">【记录】antlr中解析EDDL时解析METHOD中的C代码</link></para>
+        <para><link xl:href="http://www.crifan.com/summary_some_other_antlr_material/">【整理】关于antlr的一些资料</link></para>
+    </sect2>
+    
+    <sect2 xml:id="antlr_dev_tool_download"><title>ANTLR相关开发工具下载</title>
+        <para><link xl:href="http://www.crifan.com/download_antlr_4_0_rc_1_complete_jar/">【资源下载】antlr-4.0-rc-1-complete.jar</link></para>
+    </sect2>
+    
+    <sect2 xml:id="antlr_doc_download"><title>ANTLR相关资料和文档下载</title>
+        <para><link xl:href="http://www.crifan.com/download_antlr_the_definitive_antlr_reference_v2_v3_v4/">【资料下载】ANTLR的最全的官方文档：The Definitive ANTLR Reference：v2，v3，v4版本都有下载</link></para>
+    </sect2>
+
+</sect1>
+
+<sect1 xml:id="antlr_debug_vs_non_debug"><title>ANTLR中debug和非debug版本</title>
+    <para>ANTLR中，对于用.g所生成的代码，有两种模式：debug版本和非debug版本</para>
+    <para>是否是debug，会有很大区别：</para>
+    <para>比如就会导致后续测试代码出错还是正常运行：</para>
+    <para><link xl:href="http://www.crifan.com/android_debug_antlr_parser_error_for_xxx_return/">【问题】android中调试antlr时执行xxx_return去获得parserResult时出错</link></para>
+    
+    <para>比如会影响到是否可以获得生成的AST中节点之间的父子关系：</para>
+    <sect2 xml:id="antlr_ast_no_parent_child_relation"><title>ANTLR生成的AST中没有节点的父子关系</title>
+        <para>之前遇到的问题：对于ANTLR来说，默认所生成的AST中，没有节点的父子关系。</para>
+        <para>经过一番折腾，最终是找到了，如何获得节点的父子关系：</para>
+        <para><link xl:href="http://www.crifan.com/antlr_ast_no_parent_child_relation/">【已解决】antlr中获得的AST的CommonTree这个树的变量中，不存在所想要的父子(parent,child)关系</link></para>
+    </sect2>
+
+</sect1>
+
+
+
+
+</chapter>
